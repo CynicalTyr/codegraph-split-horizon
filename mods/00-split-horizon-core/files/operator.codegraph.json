@@ -1,0 +1,1 @@
+{"extensions":{".md":"twig",".json":"yaml"},"exclude":["**/.env","**/.env.*","**/*auth.json",".cache/",".local/"],"include":[],"deprioritize":[]}

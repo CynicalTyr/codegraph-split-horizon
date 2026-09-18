@@ -1,0 +1,9 @@
+{
+  "id": "05-empty-explore-cli",
+  "title": "Zero-symbol files: files + node --file.",
+  "requires": [],
+  "standalone": true,
+  "writes": ["operator-root"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Install horizon-node: given a path, run codegraph files --pattern then codegraph node --file. Use when codegraph_explore is empty on .md/.sh/.html/.mdc/.json/.yaml/.service/.timer. Never language:bash or language:html. Shell/markdown live as twig; HTML as xml."
+}

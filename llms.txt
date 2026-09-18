@@ -1,0 +1,22 @@
+# CodeGraph Split-Horizon
+
+Complementary DLC for Colby McHenry's CodeGraph. Not a replacement indexer. Homepage is first-person product copy in README.md. Teaching spine: docs/HOW_IT_WORKS.md (Colby engine → mods 00–14 in order).
+
+## Files
+
+- [README.md](README.md): GitHub homepage. Product + mods. Credit Colby.
+- [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md): complementary curriculum — what his engine already does, what each mod adds
+- [START_HERE.md](START_HERE.md): 10-minute install of mod 00 on scratch dirs (`init` then `index --force`; empty-explore drill)
+- [HORIZON.md](HORIZON.md): two-screen map (architect vs operator, one serve path, writer UID, messenger-not-oracle)
+- [mods/AGENT_INDEX.md](mods/AGENT_INDEX.md): agent protocol — pick one mod, dry-run, MCP-not-connected → CLI, ~3 explores, json force-reindex vs file sync, hook-spawn ban
+- [mods/catalog.json](mods/catalog.json) / [mods/catalog.yml](mods/catalog.yml): machine catalog (00–14)
+- [mods/README.md](mods/README.md): human DLC store
+- [horizon.sh](horizon.sh): list | info | install | verify | doctor | uninstall
+- [docs/ENGINE.md](docs/ENGINE.md): Colby's engine README after overlay apply
+- [docs/COLBY_ISSUE.md](docs/COLBY_ISSUE.md): courtesy issue draft — do not post until the public URL exists
+- [NOTICE](NOTICE): overlay MIT + engine credit
+- [SUPPORT.md](SUPPORT.md): optional coffee fund (not required, not tax deductible)
+
+Install the engine from Colby: `@colbymchenry/codegraph` ≥ 1.6.0. This overlay writes the user's trees only.
+
+Standalone SKUs (04/05/08/10/12/13): `horizon.sh doctor --single-root --operator-root <dir>`.

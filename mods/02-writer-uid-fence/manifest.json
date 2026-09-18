@@ -1,0 +1,9 @@
+{
+  "id": "02-writer-uid-fence",
+  "title": "Writer UID equals SQLite UID.",
+  "requires": ["00-split-horizon-core"],
+  "standalone": false,
+  "writes": ["operator-root"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Install codegraph-as-owner.sh into the operator tree. It refuses ROOT outside an allowlist (exit 2). Does not pkill a live owner serve --mcp. Optional --repair-wal. Architect must call this wrapper, not bare codegraph sync on the operator root."
+}

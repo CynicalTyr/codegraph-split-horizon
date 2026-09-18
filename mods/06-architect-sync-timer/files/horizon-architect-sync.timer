@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer: CodeGraph sync architect home
+
+[Timer]
+OnBootSec=10min
+OnCalendar=*-*-* 00:00:00
+OnCalendar=*-*-* 12:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

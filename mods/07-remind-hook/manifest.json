@@ -1,0 +1,9 @@
+{
+  "id": "07-remind-hook",
+  "title": "Remind. Do not index from the IDE.",
+  "requires": ["00-split-horizon-core"],
+  "standalone": false,
+  "writes": ["architect-home", "cursor-hooks"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Install a hook script that prints a sync reminder for the unwatched architect root. It must not exec codegraph. WAL fights happen when the IDE and the operator timer both write."
+}

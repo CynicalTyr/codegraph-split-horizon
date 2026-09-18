@@ -1,0 +1,9 @@
+{
+  "id": "00-split-horizon-core",
+  "title": "Two graphs. Two consumers. Do not merge them.",
+  "requires": [],
+  "standalone": false,
+  "writes": ["operator-root", "architect-home"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Create two separate CodeGraph roots: operator corpus (unattended local/ML process) and architect home (Cursor). Do not merge SQLite files. Pin questions about runtime code to the operator root. Architect skills/docs use projectPath later (mod 01). After apply, user must codegraph index --force each root as the Unix user who will own that DB."
+}

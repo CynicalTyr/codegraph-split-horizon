@@ -1,0 +1,7 @@
+[Unit]
+Description=CodeGraph sync for the operator corpus as the owner UID
+
+[Service]
+Type=oneshot
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=__WRAPPER__ __OPERATOR_ROOT__

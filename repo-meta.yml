@@ -1,0 +1,10 @@
+---
+description: "CodeGraph split-horizon mods: two consumers (local operator + Cursor), pin-the-serve, writer-UID fence. Complements Colby McHenry's indexer."
+homepage: "START_HERE.md"
+topics:
+  - codegraph
+  - mcp
+  - cursor
+  - agents
+private: false
+name: codegraph-split-horizon

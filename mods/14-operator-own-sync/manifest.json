@@ -1,0 +1,9 @@
+{
+  "id": "14-operator-own-sync",
+  "title": "Owner-UID timer for the operator tree. Freshness survives laptop-lid.",
+  "requires": ["00-split-horizon-core", "02-writer-uid-fence"],
+  "standalone": false,
+  "writes": ["operator-root"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Systemd user unit templates that call codegraph-as-owner.sh on the operator root. 06 remains the architect timer. Remind-hook stays print-only. Installer does not enable linger."
+}

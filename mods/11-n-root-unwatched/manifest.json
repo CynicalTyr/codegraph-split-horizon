@@ -1,0 +1,9 @@
+{
+  "id": "11-n-root-unwatched",
+  "title": "N corpora. One serve path. The rest are unwatched projectPath.",
+  "requires": ["00-split-horizon-core"],
+  "standalone": false,
+  "writes": ["operator-root"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Teach more than two trees: pin serve to one primary corpus. Every other root is projectPath / --path and has no watcher. Never codegraph init /. Never index another host's mount (mod 13). Writes NROOT.md under operator .horizon/."
+}

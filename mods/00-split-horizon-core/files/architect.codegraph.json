@@ -1,0 +1,1 @@
+{"extensions":{".md":"twig",".mdc":"twig",".json":"yaml"},"exclude":["**/.env","**/.env.*","**/*auth.json",".cache/",".local/",".cursor/projects/",".cursor/chats/",".cursor-server/"],"include":[],"deprioritize":[]}

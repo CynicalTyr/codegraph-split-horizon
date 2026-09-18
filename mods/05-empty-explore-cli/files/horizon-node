@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Resolve a file in a CodeGraph index when explore returned empty.
+set -euo pipefail
+ROOT="${1:?usage: horizon-node ROOT RELATIVE_OR_BASENAME}"
+NAME="${2:?usage: horizon-node ROOT RELATIVE_OR_BASENAME}"
+BIN="${CODEGRAPH_BIN:-codegraph}"
+if [[ ! -d "$ROOT" ]]; then
+  echo "not a directory: $ROOT" >&2
+  exit 2
+fi
+if [[ "$NAME" == /* ]]; then
+  echo "pass a path relative to ROOT, not absolute" >&2
+  exit 2
+fi
+echo "# files matching ${NAME}" >&2
+"$BIN" files --path "$ROOT" --pattern "$NAME" --format flat || true
+if [[ -f "$ROOT/$NAME" ]]; then
+  echo "# node --file $NAME" >&2
+  exec "$BIN" node --file "$NAME" --path "$ROOT"
+fi
+base="$(basename "$NAME")"
+hit="$("$BIN" files --path "$ROOT" --pattern "$base" --format flat | head -n 1 || true)"
+if [[ -n "$hit" ]]; then
+  echo "# node --file $hit" >&2
+  exec "$BIN" node --file "$hit" --path "$ROOT"
+fi
+echo "horizon-node: no index hit for $NAME under $ROOT" >&2
+exit 1

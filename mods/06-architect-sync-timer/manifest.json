@@ -1,0 +1,9 @@
+{
+  "id": "06-architect-sync-timer",
+  "title": "projectPath has no watcher. Sync on a clock.",
+  "requires": ["00-split-horizon-core"],
+  "standalone": false,
+  "writes": ["architect-home", "systemd-user"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Install systemd user unit templates (and a cron stanza) that run codegraph sync on the architect home as the architect UID. Enable lingering if they expect sync while logged out. Skip if one watched root is enough. Does not run from IDE hooks."
+}

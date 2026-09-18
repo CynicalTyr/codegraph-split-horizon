@@ -1,0 +1,9 @@
+{
+  "id": "13-foreign-mount-fence",
+  "title": "Refuse to index another host's CIFS/NFS/FUSE mount.",
+  "requires": [],
+  "standalone": true,
+  "writes": ["operator-root"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Install refuse-mount.sh: findmnt -T ROOT, exit 2 on cifs/nfs/fuse of a network filesystem. A share of another computer is not a local graph. No host paths in the script."
+}

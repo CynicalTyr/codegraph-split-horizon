@@ -1,0 +1,9 @@
+{
+  "id": "03-non-git-home-fence",
+  "title": "include is not a whitelist on a home directory.",
+  "requires": ["00-split-horizon-core"],
+  "standalone": false,
+  "writes": ["architect-home"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Merge a hard exclude pack into architect-home codegraph.json. include is additive. Built-in skips (node_modules, .venv, build) cannot be re-included. verify.sh greps codegraph files --format flat for dump prefixes if codegraph is installed."
+}

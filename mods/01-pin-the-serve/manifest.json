@@ -1,0 +1,9 @@
+{
+  "id": "01-pin-the-serve",
+  "title": "Pin MCP serve to the operator corpus.",
+  "requires": ["00-split-horizon-core"],
+  "standalone": false,
+  "writes": ["mcp"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Write a CodeGraph MCP stdio snippet whose serve --path is the operator root. Never ${workspaceFolder} when Cursor opened the architect home. Optional sudo -u OWNER if a service user owns the operator DB. --apply needs --mcp-file. Refuses to clobber a non-CodeGraph server unless --replace-mcp."
+}

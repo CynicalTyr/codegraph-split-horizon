@@ -1,0 +1,9 @@
+{
+  "id": "04-extension-shims",
+  "title": "Map ungrammared extensions. Never .ini or .env.",
+  "requires": [],
+  "standalone": true,
+  "writes": ["operator-root"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Merge extension maps: .sh/.bash/.md/.conf → twig, .html/.htm → xml, .json/.service/.timer → yaml, .mdc → twig. Refuse .ini/.env maps. After merge, user must index --force. sync ignores new codegraph.json keys."
+}

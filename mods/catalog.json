@@ -1,0 +1,112 @@
+{
+  "codegraph_min": "1.6.0",
+  "engine": "@colbymchenry/codegraph",
+  "credit": "Credit-graph fork plus complementary DLC on Colby McHenry's indexer. We did not replace @colbymchenry/codegraph.",
+  "mods": [
+    {
+      "id": "00-split-horizon-core",
+      "title": "Two graphs. Two consumers. Do not merge them.",
+      "standalone": false,
+      "requires": [],
+      "writes": ["operator-root", "architect-home"]
+    },
+    {
+      "id": "01-pin-the-serve",
+      "title": "Pin MCP serve to the operator corpus, not the folder the IDE opened.",
+      "standalone": false,
+      "requires": ["00-split-horizon-core"],
+      "writes": ["mcp"]
+    },
+    {
+      "id": "02-writer-uid-fence",
+      "title": "The Unix user who owns the SQLite is the only writer.",
+      "standalone": false,
+      "requires": ["00-split-horizon-core"],
+      "writes": ["operator-root"]
+    },
+    {
+      "id": "03-non-git-home-fence",
+      "title": "On a home directory, include is not a whitelist. Exclude is the fence.",
+      "standalone": false,
+      "requires": ["00-split-horizon-core"],
+      "writes": ["architect-home"]
+    },
+    {
+      "id": "04-extension-shims",
+      "title": "1.6.0 has no bash/html/markdown grammar. Map them or explore goes silent.",
+      "standalone": true,
+      "requires": [],
+      "writes": ["operator-root"]
+    },
+    {
+      "id": "05-empty-explore-cli",
+      "title": "Zero-symbol files are in the index. horizon-node finds them.",
+      "standalone": true,
+      "requires": [],
+      "writes": ["operator-root"]
+    },
+    {
+      "id": "06-architect-sync-timer",
+      "title": "projectPath has no watcher. Sync that root on a clock.",
+      "standalone": false,
+      "requires": ["00-split-horizon-core"],
+      "writes": ["architect-home", "systemd-user"]
+    },
+    {
+      "id": "07-remind-hook",
+      "title": "Remind. Do not spawn the indexer from the IDE.",
+      "standalone": false,
+      "requires": ["00-split-horizon-core"],
+      "writes": ["architect-home", "cursor-hooks"]
+    },
+    {
+      "id": "08-agent-protocol",
+      "title": "Paste-ready policy: pick the index, trust explore, stop the nodding loop.",
+      "standalone": true,
+      "requires": [],
+      "writes": ["agent-policy"]
+    },
+    {
+      "id": "09-findability-not-fear",
+      "title": "Index config YAML so agents can find it. Still never print values.",
+      "standalone": false,
+      "requires": ["00-split-horizon-core"],
+      "writes": ["operator-root"]
+    },
+    {
+      "id": "10-blob-exclude",
+      "title": "The graph is AST. Live databases are not code.",
+      "standalone": true,
+      "requires": [],
+      "writes": ["operator-root"]
+    },
+    {
+      "id": "11-n-root-unwatched",
+      "title": "N corpora. One serve path. The rest are unwatched projectPath.",
+      "standalone": false,
+      "requires": ["00-split-horizon-core"],
+      "writes": ["operator-root"]
+    },
+    {
+      "id": "12-slow-disk-first-index",
+      "title": "Slow-disk first --force: no watchdog. Unlock only if lock PID is dead.",
+      "standalone": true,
+      "requires": [],
+      "writes": ["operator-root"]
+    },
+    {
+      "id": "13-foreign-mount-fence",
+      "title": "Refuse to index another host's CIFS/NFS/FUSE mount.",
+      "standalone": true,
+      "requires": [],
+      "writes": ["operator-root"]
+    },
+    {
+      "id": "14-operator-own-sync",
+      "title": "Owner-UID timer for the operator tree. Freshness survives laptop-lid.",
+      "standalone": false,
+      "requires": ["00-split-horizon-core", "02-writer-uid-fence"],
+      "writes": ["operator-root"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "extensions": {
+    ".sh": "twig",
+    ".bash": "twig",
+    ".md": "twig",
+    ".mdc": "twig",
+    ".conf": "twig",
+    ".html": "xml",
+    ".htm": "xml",
+    ".json": "yaml",
+    ".service": "yaml",
+    ".timer": "yaml"
+  }
+}

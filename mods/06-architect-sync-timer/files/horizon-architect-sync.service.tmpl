@@ -1,0 +1,8 @@
+[Unit]
+Description=CodeGraph sync for the architect home (projectPath has no watcher)
+
+[Service]
+Type=oneshot
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+# First index on a slow disk: Environment=CODEGRAPH_NO_WATCHDOG=1
+ExecStart=/usr/bin/env codegraph sync --path __ARCHITECT_HOME__

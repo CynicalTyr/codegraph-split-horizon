@@ -1,0 +1,9 @@
+{
+  "id": "08-agent-protocol",
+  "title": "Pick the index. Trust explore. Stop the nodding loop.",
+  "requires": [],
+  "standalone": true,
+  "writes": ["agent-policy"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Copy HORIZON.rule.md into the user's agent policy dir. Does not overwrite Colby's engine AGENTS.md. Protocol: pick operator vs architect index first; codegraph_explore is the Read; ~3 calls per index; empty explore → horizon-node; MCP down → CLI; never Grep-verify; never replace the local operator inner loop with the IDE session."
+}

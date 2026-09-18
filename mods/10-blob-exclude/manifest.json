@@ -1,0 +1,9 @@
+{
+  "id": "10-blob-exclude",
+  "title": "The graph is AST. Live databases are not code.",
+  "requires": [],
+  "standalone": true,
+  "writes": ["operator-root"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Merge exclude globs for *.db, wal/shm, sqlite, and a placeholder ANN glob the user can extend. Index is not a second copy of memory/vector DBs. Files >1MB are skipped anyway; still exclude so a future grammar cannot ingest them."
+}

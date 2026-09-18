@@ -1,0 +1,7 @@
+---
+description: Split-horizon CodeGraph DLC — agent protocol when this overlay is the workspace
+globs: HORIZON.md,START_HERE.md,mods/**,llms.txt
+alwaysApply: false
+---
+
+Read docs/HOW_IT_WORKS.md, HORIZON.md, and mods/AGENT_INDEX.md before editing src/. You are in complementary DLC. Colby's engine AGENTS.md is not the split-horizon playbook. Pick one mod. Dry-run. Never invent host paths. Never map .env. MCP not connected → CLI on that root. After codegraph.json edits: index --force. Do not spawn sync from an IDE hook.

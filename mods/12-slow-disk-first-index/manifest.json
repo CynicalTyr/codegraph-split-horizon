@@ -1,0 +1,9 @@
+{
+  "id": "12-slow-disk-first-index",
+  "title": "USB/SD/NFS first --force: no watchdog. Unlock only if the lock PID is dead.",
+  "requires": [],
+  "standalone": true,
+  "writes": ["operator-root"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Copy first-index.sh that exports CODEGRAPH_NO_WATCHDOG=1 then runs index --force. Unlock only when the lock PID is gone. Do not confuse with the architect timer (06)."
+}

@@ -1,0 +1,22 @@
+{
+  "exclude": [
+    ".cache/",
+    ".local/",
+    ".config/",
+    ".npm/",
+    ".cursor/projects/",
+    ".cursor/chats/",
+    ".cursor-server/",
+    ".cursor/plugins/cache/",
+    "**/.env",
+    "**/.env.*",
+    "**/*auth.json",
+    "**/package-lock.json",
+    "**/vendor/**"
+  ],
+  "deprioritize": [
+    "tests/**",
+    "**/generated/**",
+    "**/backups/**"
+  ]
+}

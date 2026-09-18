@@ -1,0 +1,6 @@
+{
+  "comment": "Paste this object into your Cursor hooks list. Do not replace the whole file. command path is yours.",
+  "event": "afterFileEdit",
+  "command": "__HOOK_PATH__",
+  "note": "Remind only. The script must not run codegraph."
+}

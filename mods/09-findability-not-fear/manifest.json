@@ -1,0 +1,9 @@
+{
+  "id": "09-findability-not-fear",
+  "title": "Index config YAML so agents can find it. Never print values.",
+  "requires": ["00-split-horizon-core"],
+  "standalone": false,
+  "writes": ["operator-root"],
+  "codegraph_min": "1.6.0",
+  "agent_summary": "Ensure identity/config YAML is not in exclude. Keep **/.env, **/.env.*, **/*auth.json excluded. Story: excluding the identity SSOT 'for safety' made agents unable to locate the file. YAML explore returns keys. Still do not dump secrets into chat."
+}
