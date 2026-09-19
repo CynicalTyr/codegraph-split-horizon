@@ -49,4 +49,10 @@ Colby's engine README lives at [docs/ENGINE.md](docs/ENGINE.md) and [CodeGraph](
 
 MIT engine: Copyright (c) 2026 Colby Mchenry. I keep his `LICENSE`. I do not republish `@colbymchenry/codegraph` under another npm name, and neither should you. Do not patch his `src/`. What [Colby McHenry](https://github.com/colbymchenry/codegraph) built is phenomenal. I like mods and game DLC's that tweak a thing other people already made. 
 
-Overlay notes: [NOTICE](NOTICE). Optional coffee that does **not** fund his indexer: [SUPPORT.md](SUPPORT.md). 
+Overlay notes: [NOTICE](NOTICE). Optional coffee that does **not** fund his indexer: [SUPPORT.md](SUPPORT.md).
+
+## Coffee and energy fund
+
+If the WAL story saved you a weekend and you want more CynicalTyr notes and products, coffee and electricity are the whole pitch. Optional. This does not fund Colby's indexer.
+
+<a title="Donate with PayPal" href="https://www.paypal.me/ctmskm" target="_blank" rel="noopener"><img src="https://moosenet.lol/assets/images/paypal-logo.png" alt="PayPal" width="140" height="50" /></a><a title="Donate with CashApp" href="https://cash.app/$MooseMeNow" target="_blank" rel="noopener"><img src="https://moosenet.lol/assets/images/cashapp-logo.png" alt="Cash App" width="140" height="55" /></a> <a title="Donate with Venmo" href="https://venmo.com/MooseMeNow" target="_blank" rel="noopener"><img src="https://moosenet.lol/assets/images/venmo-logo-600x188.png" alt="Venmo" width="140" height="50" /></a>
