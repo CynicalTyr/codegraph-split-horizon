@@ -1,11 +1,7 @@
 # Coffee and energy fund
 
-The mods are MIT. Colby's engine is MIT. Nobody owes a cent, and a transfer does not buy features, support, or a warranty. It is not tax-deductible. It does not fund CodeGraph itself — that would be Colby's project.
+Nobody owes a cent. A transfer does not buy features, support, or a warranty. It is not tax-deductible.
 
-If the WAL story saved you a weekend, coffee and electricity are the whole pitch. Skip it without a speech.
+If this work is useful and you want CynicalTyr to keep building code and products, coffee and electricity are the whole pitch. Skip it without a speech.
 
-GitHub's Sponsor button (if it shows) uses the same destinations via `.github/FUNDING.yml`. GitHub does not process these payments.
-
-- [PayPal](https://www.paypal.me/ctmskm)
-- [Cash App](https://cash.app/$MooseMeNow)
-- [Venmo](https://venmo.com/MooseMeNow)
+<a title="Donate with PayPal" href="https://www.paypal.me/ctmskm" target="_blank" rel="noopener"><img src="https://moosenet.lol/assets/images/paypal-logo.png" alt="PayPal" width="140" height="50" /></a><a title="Donate with CashApp" href="https://cash.app/$MooseMeNow" target="_blank" rel="noopener"><img src="https://moosenet.lol/assets/images/cashapp-logo.png" alt="Cash App" width="140" height="55" /></a> <a title="Donate with Venmo" href="https://venmo.com/MooseMeNow" target="_blank" rel="noopener"><img src="https://moosenet.lol/assets/images/venmo-logo-600x188.png" alt="Venmo" width="140" height="50" /></a>
